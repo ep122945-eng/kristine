@@ -50,7 +50,7 @@ export default function Contact() {
                   <div>
                     <p className="text-[10px] font-bold tracking-widest uppercase text-brand-mocha/40 mb-1">Call Us</p>
                     <p className="text-brand-mocha font-display text-xl leading-relaxed">
-                      +1 (555) 123-4567
+                      0998 789 6543
                     </p>
                   </div>
                 </div>
@@ -62,7 +62,7 @@ export default function Contact() {
                   <div>
                     <p className="text-[10px] font-bold tracking-widest uppercase text-brand-mocha/40 mb-1">Email Us</p>
                     <p className="text-brand-mocha font-display text-xl leading-relaxed">
-                      hello@kristinebeauty.com
+                      TintinTheGreat@kristinebeauty.com
                     </p>
                   </div>
                 </div>
