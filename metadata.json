@@ -1,0 +1,8 @@
+{
+  "name": "Kristine Beauty Studio",
+  "description": "Premium luxury beauty studio website offering lashes, brows, and aesthetic services with a modern, feminine touch.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}

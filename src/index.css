@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-display: "Playfair Display", serif;
+
+  --color-brand-nude: #fdfaf7;
+  --color-brand-beige: #f5f2ed;
+  --color-brand-gold: #c5a059;
+  --color-brand-gold-light: #e6d5b8;
+  --color-brand-pink: #f8e8e8;
+  --color-brand-mocha: #6d5d54;
+  --color-brand-mocha-light: #a6968c;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-nude text-brand-mocha font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-brand-mocha;
+  }
+}
+
+@layer components {
+  .luxury-button {
+    @apply relative overflow-hidden px-8 py-3 bg-brand-mocha text-white font-medium transition-all duration-300 hover:bg-brand-mocha-light active:scale-95;
+  }
+
+  .luxury-button-outline {
+    @apply relative overflow-hidden px-8 py-3 border border-brand-mocha text-brand-mocha font-medium transition-all duration-300 hover:bg-brand-mocha hover:text-white active:scale-95;
+  }
+
+  .glass-card {
+    @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-sm transition-all duration-500 hover:shadow-xl hover:bg-white/60;
+  }
+
+  .section-padding {
+    @apply py-20 px-6 md:px-12 lg:px-24;
+  }
+
+  .serif-italic {
+    @apply font-serif italic;
+  }
+}
+
+/* Custom animations and effects */
+.mask-oval {
+  clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+.text-reveal {
+  @apply overflow-hidden;
+}
+
+.hover-lift {
+  @apply transition-transform duration-300 hover:-translate-y-1;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
